@@ -94,6 +94,24 @@ span ul li a{
     margin-bottom: 20px;
     padding: 10px;
 }
+
+
+.foot{
+    background-color: rgb(59, 114, 162);
+    height: 250px;
+    padding: 20px;
+    justify-content: space-between;
+}
+.secdiv1 h4{
+    /* text-align: left; */
+}
+.secdiv1 ul li{
+    text-decoration: none;
+    text-align: left;
+    color: white;
+    list-style: none;
+
+}
 /* 
 .first_sec{
     width: 100%;
@@ -104,12 +122,7 @@ span ul li a{
     justify-content: space-between;
 }
 
-.secdiv1{
-    border: 1px solid orange;
-    height: 320px;
-    width: 33%;
 
-}
 .secdiv2{
     border: 1px solid red;
     height: 320px;
