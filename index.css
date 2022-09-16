@@ -4,18 +4,17 @@
     box-sizing: border-box;
 }
 
-
 header{
     /* padding: 10px; */
     /* margin-bottom: 10px; */
     background-color: rgb(59, 114, 162);
 }
+
 .navbar{
     border-bottom: 1px solid whitesmoke;
     padding: 10px;
     display: flex;
-    /* height: 100px; */
-    
+    /* height: 100px; */    
 }
 
 .searchbarIcon{
@@ -64,9 +63,6 @@ span ul li a{
     text-align: center;
 }
 
-.menu ul{
-   
-}
 
 .menus ul li{
     color: white;
@@ -81,12 +77,35 @@ span ul li a{
     color: rgb(59, 114, 162);
 }
 
+.sellers-sec{
+    padding: 15px!important;
+    display: block;
+    padding: 10px;
+    width: 40%;
+    margin: auto;
+    border: 1px solid rgb(59, 114, 162);
+    /* background-color: red; */
+}
+.welcome{
+    border-bottom: 1px solid #1d5484;
+    width: 100%;
+}
 
-.homeProducts h5{
+.sellers-products h5{
     text-align: center;
     border: 1px solid whitesmoke;
     padding: 5px;
     
+}
+.sellers-products{
+    background-color: blue!important;
+    height: 60vh!important;
+}
+.homeProducts h5{
+    text-align: center;
+    border: 1px solid whitesmoke;
+    padding: 5px;
+    /* background-color: red; */
 }
 
 .products-lists{
@@ -94,7 +113,6 @@ span ul li a{
     margin-bottom: 20px;
     padding: 10px;
 }
-
 
 .foot{
     background-color: rgb(59, 114, 162);
@@ -124,14 +142,14 @@ footer li{
     /* margin-top: 20px; */
     margin-bottom: 5px;
     /* margin: 20px 0px 20px 0px; */
-    height: 90vh;
+    height: 90vh!important  ;
     align-items: center;
     /* text-align: center; */
     width: 40vw;
     padding: 20px 40px 0px 40px;
     border: 1px solid rgb(59, 114, 162);
     border-radius: 20px;
-    background-color: rgb(59, 114, 162);
+    /* background-color: rgb(59, 114, 162); */
 }
 
 .registerBckgrd{
@@ -155,37 +173,23 @@ footer li{
     }
 }
 
-change-the-color{
-    animation: ;
-}
+@media (max-width:768px){
+    .mobile-none{
+        display: none;
+    }
+    .menus ul{
+        display: none;
+    }
 
-.loginBtn{
+    .foot{
+        /* display: block !important; */
+        align-items: center;
+        
+    }
+    .secdiv1 .secdiv2 .secdiv3{
+        margin: auto;
+    }
     
-    /* display: inline-flex; */
-    /* margin-right: 50px; */
-    /* float: right; */
-    
-    
-}
-/* 
-.first_sec{
-    width: 100%;
-    height: 350px;
-    background-color: burlywood;
-    padding: 10px;
-    display: flex;
-    justify-content: space-between;
 }
 
 
-.secdiv2{
-    border: 1px solid red;
-    height: 320px;
-    width: 33%;
-}
-
-.secdiv3{
-    border: 1px solid yellow;
-    height: 320px;
-    width: 33%;
-} */

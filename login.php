@@ -16,7 +16,7 @@
             <span class="col-2 "><img class="p-logo" src="img/profileLogo.png" alt=""> 
                 <ul>
                     <li><a href="">My Account</a> </li>
-                    <li><a href="register.html">Login/Register</a> </li>
+                    <li><a href="register.php">Login/Register</a> </li>
                 </ul>
             </span>         
             <span class="col-2 span-cart"> <img class="cart-logo" src="img/cartLogo-removebg-preview.png" alt="">
@@ -30,11 +30,37 @@
 
     </header>
 
-    <section class="registerBckgrd">
+<section class="registerBckgrd">
         <div class="col-3"></div>
-        <div class="register">
 
-            <form action="">
+        <div class="register">
+                <?php
+                        session_start();
+                        require "dbcrend.php";
+                        if (isset($_POST['submit'])) {
+                        $email = $_POST['email'];
+                        $password = $_POST['password'];
+                                        $query = "SELECT * FROM users WHERE email = '$email'";
+                                        $queryDb = $connectDb->query($query);
+                        if ($queryDb->num_rows > 0) {
+                           $userDetails = $queryDb->fetch_assoc();
+                        //    print_r($userDetails);
+                           $pass = $userDetails['password'];
+                           $verify = password_verify($password, $pass);
+                                echo $verify;
+                           if ($verify) {
+                                $_SESSION["userDetails"] = $userDetails;
+                                header("Location: dashboard.php");
+                           } else {
+                                echo "<div class='alert alert-danger text-center'>Incorrect Password.</div>";
+                           }
+                        } else {
+                            echo "<div class='alert alert-danger text-center'>Invalid Login Details.</div>";
+                        }
+                    }
+
+                ?>
+            <form action="<?php echo $_SERVER['PHP_SELF'] ?>" method="POST">
                 <h3 class="text-center mb-3 text-white">Welcome!!!</h3>
 
                 <span class="loginBtn text-center">
@@ -42,17 +68,17 @@
                 </span>
                     
                 
-                <p class="text-white">Email</p> 
-                <input class="p-1 mb-2  w-100 rounded" type="text" placeholder="enter your Email" width="100px"> <br>
+                <label class="text-white">Email</label> 
+                <input class="p-1 mb-2  w-100 rounded" type="text"name='email' placeholder="enter your Email" width="100px" required> <br><br>
                 
-                <p class="text-white">Password</p>
-                <input class="p-1 mb-3 w-100 rounded" type="password" placeholder="enter your Password" width="100px"> <br>
+                <label class="text-white">Password</label>
+                <input class="p-1 mb-3 w-100 rounded" type="password" name='password'placeholder="enter your Password" width="100px"> <br>
                             
-                <button class="p-1 rounded btn-light w-25 mb-2">Log in</button> 
-                
-                
+                <!-- <button class="p-1 rounded btn-light w-25 mb-2" name="login" type="login" value="login"> Log In</button> -->
+                <input class="btn btn-light w-25" name="submit" type="submit" value="Submit">    
             </form>
         </div>
+
         <div class="col-3"></div>
         
     </section>

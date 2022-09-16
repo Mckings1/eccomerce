@@ -7,7 +7,7 @@
             $lastName = $_POST['lastName'];
             $gender = $_POST['gender'];
             $phoneNumber = $_POST['phoneNumber'];
-            $email = $_POST['email'];
+            $email = $_POST['email'];   
             $password  = $_POST['password'];
         }
 
@@ -21,7 +21,7 @@
         else {
             $hashedPassword = password_hash($password, PASSWORD_DEFAULT);
             $query = "INSERT INTO users (`firstName`, `lastName`, `gender`, `phoneNumber`,  `email`,  `password`) 
-                        VALUES ('$firstName', '$lastName',  '$gender', '$phoneNumber', '$email',  '$password' )";
+                        VALUES ('$firstName', '$lastName',  '$gender', '$phoneNumber', '$email',  '$hashedPassword')";
             $queryDb = $connectDb->query($query);
                 // print_r($query);
 

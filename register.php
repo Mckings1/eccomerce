@@ -38,41 +38,26 @@
             <span class="loginBtn text-center">
                 <p class="text-white">Already have an account? <button class="btn-light p-1 w-25 rounded"><a href="login.php" class="text-decoration-none text-black"> Login here</a> </button></p>
             </span> 
-               <form action="bckend.php" method="POST">
+               <form action="bckendRegister.php" method="POST">
                 
-                <?php
-                // session_start ();
-                // if (isset($_SESSION['message'])){
-                //     echo "<div class='alert-danger text-center'>". $_SESSION['message']. "</div>";
-
-                // }
-                // session_unset();
-                ?>
                     <label class="text-white">First Name</label>
-                    <input class="p-1 mb-3 w-100 rounded " type="text" placeholder="enter your First Name" name="firstName" width="100px"> <br>
+                    <input class="p-1 mb-3 w-100 rounded " type="text" placeholder="enter your First Name" name="firstName" width="100px" required> <br>
                         
                     <label class="text-white">Last Name</label>
-                    <input class="p-1 mb-3 w-100 rounded" type="text" placeholder="enter your Last Name" name="lastName" width="100px"><br>
+                    <input class="p-1 mb-3 w-100 rounded" type="text" placeholder="enter your Last Name" name="lastName" width="100px" required><br>
                     
                     <label class="text-white mb-3">Gender</label>
-                    <input class="p-1 mb-3 w-100 rounded " type="text" name="gender" placeholder="male or female"> <br>
-
-                        <!-- <label class="text-white" for="">Male</label>
-                        <input type="radio" name="gender" value="m">
-                        <label class="text-white" for="">Female</label>
-                        <input type="radio" name="gender" value="f">
-                        <label class="text-white" for="">Others</label>
-                        <input class="mb-3" type="radio" name="gender" value="o"> <br> -->
-                    <!-- <input class="p-1 mb-2 w-100 rounded" type="text" placeholder="" width="100px"> <br> -->
+                    <input class="p-1 mb-3 w-100 rounded " type="text" name="gender" placeholder="male or female" required> <br>
                     
                     <label class="text-white">Phone Number</label>
-                    <input class="p-1 mb-3 w-100 rounded" type="number" placeholder="enter your Phone Number" name="phoneNumber"width="100px"><br>
+                    <input class="p-1 mb-3 w-100 rounded" type="number" placeholder="enter your Phone Number" name="phoneNumber"width="100px" required><br>
+
                     <label class="text-white">Email</label> 
-                    <input class="p-1 mb-3  w-100 rounded" type="text" placeholder="enter your Email" name="email" width="100px"> <br>
+                    <input class="p-1 mb-3  w-100 rounded" type="text" placeholder="enter your Email" name="email" width="100px" required> <br>
                     
                     <label class="text-white">Password</label>
-                    <input class="p-1 mb-3 w-100 rounded" type="password" placeholder="enter your Password" name="password" width="100px"><br>
-                    <button class="p-1 rounded btn-light w-25 mb-2" name="submit" type="submit" value="submit">submit</button> 
+                    <input class="p-1 mb-3 w-100 rounded" type="password" placeholder="enter your Password" name="password" width="100px" required><br>
+                    <button class="p-1 rounded btn-light w-25 mb-2" name="submit" type="submit" value="submit" >submit</button> 
 
                 </form> 
             

@@ -9,7 +9,7 @@
     if($connectDb->connect_error){
         die("Connection Failed". $connectDb->connect_error);
     }else{
-        echo "please kindly sign up!";
+        // echo "please kindly sign up!";
     }
     
 ?>
