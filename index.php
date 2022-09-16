@@ -53,7 +53,7 @@
             </ul>
         </section>
         
-        <section class="homeProducts">
+<section class="homeProducts">
             <h5> NEW PRODUCT</h5>
 
             <div class="row products-lists">

@@ -58,19 +58,43 @@
             </ul>
 </section>
 
+<section class="sellers-sec p-2">
+    WELCOME <?php  echo $userDetails['firstName']; ?> <br>
+    <form action="upload.php" method="POST" enctype="multipart/form-data">
+        <input class="w-100 mb-2 p-1" type="text" placeholder="name" required> <br>
+        <input class="w-100 mb-2 p-1" type="number" placeholder="quantity"> <br>
+        <input class="w-100 mb-2 p-1" type="text" placeholder="description"> <br>
+        <input class="w-100 mb-2 p-1" type="text" placeholder="price">  <br>
+        <input class="w-100 mb-2 p-1" type="file" name="sellers-pics"> <br>
+        <button type="submit" name="submit" class="btn btn-dark btn-sm">Upload File</button>
+    </form>
+
+</section>
+
 <section class="sellers-products p-3">
         <h5> Sellers Products</h5>
         <div class="row">
             <div class="col-lg-12 col-md-6 col-sm-6">
                 <?php 
-                    $seller_id = $SESSION['seller_id'];
+                    // $seller_id = $SESSION['seller_id'];+
+                    require "dbcrend.php";
                     $query = "SELECT * FROM `product` WHERE `seller_id = '$seller_id'";
                     $queryDb = $connectDb ->query($query);
                     if($queryDb->num_rows>0){
                         while($productDetail = $queryDb ->fetch_assoc()){
                             if($productDetail){
                                 $img=$productDetail['productDetails'] = $productDetail;
-                                echo "<div class='car"
+                                echo
+                                "<div class='col-2 card text-center' style='width: 14rem;'>
+                                    <img class='card-img-top' src='uploads/{$img}' alt='Card image cap'>
+                                    <div class='card-body'>
+                                        <h6 class='card-title'>{$productDetail['product_name']}</h6>
+                                        <p>{$productDetail['quantity']}</p>
+                                        <p>{$productDetail['description']}</p>
+                                        <p class='card-text'>{$productDetail['price']}</p>
+                                        <a href='#' class='btn btn-primary'> Add to cart </a>
+                                    </div>
+                                </div>";
                             }
                         }
                     }

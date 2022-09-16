@@ -57,33 +57,27 @@
 
             </ul>
 </section>
-
-<section class="sellers-sec p-2">
-    WELCOME <?php  echo $userDetails['firstName']; ?> <br>
-    <form action="upload.php" method="POST" enctype="multipart/form-data">
-        <input class="w-100 mb-2 p-1" type="text" placeholder="name" required> <br>
-        <input class="w-100 mb-2 p-1" type="number" placeholder="quantity"> <br>
-        <input class="w-100 mb-2 p-1" type="text" placeholder="description"> <br>
-        <input class="w-100 mb-2 p-1" type="text" placeholder="price">  <br>
-        <input class="w-100 mb-2 p-1" type="file" name="sellers-pics"> <br>
-        <button type="submit" name="submit" class="btn btn-dark btn-sm">Upload File</button>
-    </form>
-
-</section>
  
 <section class="homeProducts">
-            <h5> NEW PRODUCT</h5>
-
-            <div class="row products-lists">
-
-                <div class="col-2 card text-center" style="width: 14rem;">
-                    <img class="card-img-top" src="img/ALL OUT ROVE2-270x270.jpg" alt="Card image cap">
+    <h5> NEW PRODUCT</h5>
+        <div class="row products-lists">
+            <div class=" col-2 card text-center" style="width: 14rem;">
+                    <img class="card-img-top" src="img/ALL OUT ROVE-KANGAROO-270x270.jpg" alt="Card image cap">
                     <div class="card-body">
                     <h6 class="card-title">LACE UP SNEAKERS</h6>
                     <p class="card-text">₦37,500</p>
                     <a href="#" class="btn btn-primary">Add to cart</a>
                     </div>
-                </div>
+            </div>
+
+                    <div class="col-2 card text-center" style="width: 14rem;">
+                        <img class="card-img-top" src="img/ALL OUT ROVE2-270x270.jpg" alt="Card image cap">
+                        <div class="card-body">
+                        <h6 class="card-title">LACE UP SNEAKERS</h6>
+                        <p class="card-text">₦37,500</p>
+                        <a href="#" class="btn btn-primary">Add to cart</a>
+                        </div>
+                    </div>
 
                 <div class=" col-2 card text-center" style="width: 14rem;">
                     <img class="card-img-top" src="img/ALIGN-270x270.jpg" alt="Card image cap">
@@ -111,9 +105,26 @@
                     <a href="#" class="btn btn-primary">Add to cart</a>
                     </div>
                 </div>
+
+                <div class=" col-2 card text-center" style="width: 14rem;">
+                    <img class="card-img-top" src="img/CAT PAUSE1-300x300.jpg" alt="Card image cap">
+                    <div class="card-body">
+                    <h6 class="card-title">LACE UP SNEAKERS</h6>
+                    <p class="card-text">₦37,500</p>
+                    <a href="#" class="btn btn-primary">Add to cart</a>
+                    </div>
+                </div>
             </div>
 
             <div class="row products-lists">
+                <div class=" col-2 card text-center" style="width: 14rem;">
+                    <img class="card-img-top" src="img/CRAIL3-300x300.jpg" alt="Card image cap">
+                    <div class="card-body">
+                    <h6 class="card-title">LACE UP SNEAKERS</h6>
+                    <p class="card-text">₦22,500</p>
+                    <a href="#" class="btn btn-primary">Add to cart</a>
+                    </div>
+                </div>
 
                 <div class="col-2 card text-center" style="width: 14rem;">
                     <img class="card-img-top" src="img/DECISIVE-300x300.jpg" alt="Card image cap">
@@ -151,7 +162,72 @@
                     </div>
                 </div>
 
+                <div class=" col-2 card text-center" style="width: 14rem;">
+                    <img class="card-img-top" src="img/FUSED MID-300x300.jpg" alt="Card image cap">
+                    <div class="card-body">
+                    <h6 class="card-title">LACE UP SNEAKERS</h6>
+                    <p class="card-text">₦35,500</p>
+                    <a href="#" class="btn btn-primary">Add to cart</a>
+                    </div>
+                </div>
             </div>
+
+            <div class="row products-lists">
+                <div class=" col-2 card text-center" style="width: 14rem;">
+                    <img class="card-img-top" src="img/GRID COHESION 9-SIL-BLK-RED FRONT AND BACKVIEW-270x270.jpg" alt="Card image cap">
+                    <div class="card-body">
+                    <h6 class="card-title">LACE UP SNEAKERS</h6>
+                    <p class="card-text">₦22,500</p>
+                    <a href="#" class="btn btn-primary">Add to cart</a>
+                    </div>
+                </div>
+
+                <div class="col-2 card text-center" style="width: 14rem;">
+                    <img class="card-img-top" src="img/GRID MYSTIC-GRY-VIO-BLU-SIDEVIEW-270x270.jpg" alt="Card image cap">
+                    <div class="card-body">
+                    <h6 class="card-title">LACE UP SNEAKERS</h6>
+                    <p class="card-text">₦87,500</p>
+                    <a href="#" class="btn btn-primary">Add to cart</a>
+                    </div>
+                </div>
+
+                <div class=" col-2 card text-center" style="width: 14rem;">
+                    <img class="card-img-top" src="img/HELIXER 2 CHUKKA-300x300.jpg" alt="Card image cap">
+                    <div class="card-body">
+                    <h6 class="card-title">LACE UP SNEAKERS</h6>
+                    <p class="card-text">₦55,500</p>
+                    <a href="#" class="btn btn-primary">Add to cart</a>
+                    </div>
+                </div>
+
+                <div class=" col-2 card text-center" style="width: 14rem;">
+                    <img class="card-img-top" src="img/M-BRAKEE2-270x270.PNG" alt="Card image cap">
+                    <div class="card-body">
+                    <h6 class="card-title">LACE UP SNEAKERS</h6>
+                    <p class="card-text">₦37,500</p>
+                    <a href="#" class="btn btn-primary">Add to cart</a>
+                    </div>
+                </div>
+
+                <div class=" col-2 card text-center" style="width: 14rem;">
+                    <img class="card-img-top" src="img/HELIXER 2 CHUKKA-300x300.jpg" alt="Card image cap">
+                    <div class="card-body">
+                    <h6 class="card-title">LACE UP SNEAKERS</h6>
+                    <p class="card-text">₦47,500</p>
+                    <a href="#" class="btn btn-primary">Add to cart</a>
+                    </div>
+                </div>
+
+                <div class=" col-2 card text-center" style="width: 14rem;">
+                    <img class="card-img-top" src="img/M-BRAKEE2-270x270.PNG" alt="Card image cap">
+                    <div class="card-body">
+                    <h6 class="card-title">LACE UP SNEAKERS</h6>
+                    <p class="card-text">₦35,500</p>
+                    <a href="#" class="btn btn-primary">Add to cart</a>
+                    </div>
+                </div>
+            </div>
+
 </section>
 
 <footer class="foot row">
