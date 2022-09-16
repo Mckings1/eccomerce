@@ -91,16 +91,7 @@ span ul li a{
     width: 100%;
 }
 
-.sellers-products h5{
-    text-align: center;
-    border: 1px solid whitesmoke;
-    padding: 5px;
-    
-}
-.sellers-products{
-    background-color: blue!important;
-    height: 60vh!important;
-}
+
 .homeProducts h5{
     text-align: center;
     border: 1px solid whitesmoke;
@@ -112,6 +103,17 @@ span ul li a{
     justify-content: space-evenly;
     margin-bottom: 20px;
     padding: 10px;
+}
+
+.sellers-products h5{
+    text-align: center;
+    border: 1px solid whitesmoke;
+    padding: 5px;
+    
+}
+.sellers-products{
+    /* background-color: blue!important; */
+    height: 60vh!important;
 }
 
 .foot{
@@ -129,7 +131,6 @@ footer h4{
     text-align: left;
     color: white;
     list-style: none;
-
 }
 
 footer li{

@@ -26,9 +26,20 @@
     }else{
         echo "You cannot upload files of this type!";
     }
-
+    
     } else{
         // nothing
+    }
+
+    if ($uploading) {
+        $query =  "UPDATE users SET `prf_pic` = '$newName' WHERE `user_id` = '$user_id'";
+        $queryDb = $connectDb->query($query);
+        print_r($queryDb);
+        if ($queryDb) {
+            header("Location: dashboard.php");
+        } else {
+            $_SESSION['upload_error'] = "Unable to Upload.";
+        }
     }
 
 

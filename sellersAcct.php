@@ -58,8 +58,25 @@
             </ul>
 </section>
 
-<section class="sellers-products  bg-success h-100">
+<section class="sellers-products p-3">
         <h5> Sellers Products</h5>
+        <div class="row">
+            <div class="col-lg-12 col-md-6 col-sm-6">
+                <?php 
+                    $seller_id = $SESSION['seller_id'];
+                    $query = "SELECT * FROM `product` WHERE `seller_id = '$seller_id'";
+                    $queryDb = $connectDb ->query($query);
+                    if($queryDb->num_rows>0){
+                        while($productDetail = $queryDb ->fetch_assoc()){
+                            if($productDetail){
+                                $img=$productDetail['productDetails'] = $productDetail;
+                                echo "<div class='car"
+                            }
+                        }
+                    }
+                ?>
+            </div>
+        </div>
 </section>
 
 <footer class="foot row">
